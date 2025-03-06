@@ -89,6 +89,6 @@ nav:
           - Intro: developing/solid_principles/solid_principles.md
           - Single Responsibility Principle: developing/solid_principles/srp.md
       - Codebase:
-          - Business Logic: developing/business_logic.md
-          - Modular design: developing/modular_design.md
+          - Business Logic: developing/codebase/business_logic.md
+          - Modular design: developing/codebase/modular_design.md
           - Mixins vs. Utils: developing/codebase/mixins_vs_utils.md
