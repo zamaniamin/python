@@ -85,4 +85,5 @@ nav:
       - SOLID Principles:
           - Intro: developing/solid_principles/solid_principles.md
           - Single Responsibility Principle: developing/solid_principles/srp.md
-      - Business Logic: developing/business_logic.md
+      - Codebase:
+          - Business Logic: developing/business_logic.md
