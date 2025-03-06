@@ -73,17 +73,22 @@ nav:
       - Object-Oriented Programming (OOP): python/classes/object-oriented-programming.md
   - Django:
       - Introduction to Django: django/index.md
-      - Models and databases: django/models.md
+      - Best Practices and Principles:
+          - Maintainability and Extendability: django/best_practices/best_practices_and_principles.md
+          - Naming View Files: django/best_practices/naming_view_files.md
+      - Models and Databases: django/models.md
       - Reduce Test Time: django/testing/reduce-test-time.md
   - Software Developing:
       - Introduction: developing/index.md
       - Git:
           - Commit Message Structure: developing/git/commit-message-structure.md
-          - Best Practices For Git Commits: developing/git/best-practices-for-git-commits.md
+          - Best Practices for Git Commits: developing/git/best-practices-for-git-commits.md
           - Generate Commit Message with AI Assistant: developing/git/generate-commit-message-with-ai-assistant.md
-      - Design patterns: developing/design_patterns/design_patterns.md
+      - Design Patterns: developing/design_patterns/design_patterns.md
       - SOLID Principles:
           - Intro: developing/solid_principles/solid_principles.md
           - Single Responsibility Principle: developing/solid_principles/srp.md
       - Codebase:
           - Business Logic: developing/business_logic.md
+          - Modular design: developing/modular_design.md
+          - Mixins vs. Utils: developing/codebase/mixins_vs_utils.md
