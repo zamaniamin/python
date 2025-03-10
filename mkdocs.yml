@@ -78,6 +78,8 @@ nav:
           - Naming View Files: django/best_practices/naming_view_files.md
       - Models and Databases: django/models.md
       - Reduce Test Time: django/testing/reduce-test-time.md
+      - Sample Codes:
+          - Sample Codes: django/sample_codes/structured_menu.md
   - Software Developing:
       - Introduction: developing/index.md
       - Git:
