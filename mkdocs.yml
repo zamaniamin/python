@@ -76,6 +76,7 @@ nav:
       - Best Practices and Principles:
           - Maintainability and Extendability: django/best_practices/best_practices_and_principles.md
           - Naming View Files: django/best_practices/naming_view_files.md
+          - gettext vs gettext_lazy: django/best_practices/gettext.md
       - Models and Databases: django/models.md
       - Reduce Test Time: django/testing/reduce-test-time.md
       - Sample Codes:
