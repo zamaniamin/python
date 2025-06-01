@@ -71,6 +71,8 @@ nav:
       - Classes and Objects: python/classes/classes-and-objects.md
       - Namespaces and Scope: python/namespaces-and-scope.md
       - Object-Oriented Programming (OOP): python/classes/object-oriented-programming.md
+      - Dependency Management:
+          - Poetry: python/dependency/poetry.md
   - Django:
       - Introduction to Django: django/index.md
       - Best Practices and Principles:
