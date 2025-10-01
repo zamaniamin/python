@@ -99,3 +99,5 @@ nav:
           - Business Logic: developing/codebase/business_logic.md
           - Modular design: developing/codebase/modular_design.md
           - Mixins vs. Utils: developing/codebase/mixins_vs_utils.md
+  - Software Engineering:
+      - Chapter 1 - Software and Software Engineering: engineering/chapter_1/software_and_software_engineering.md
