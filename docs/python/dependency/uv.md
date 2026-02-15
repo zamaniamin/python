@@ -15,8 +15,6 @@ Installing and managing Python itself.
 - `uv python pin`: Pin the current project to use a specific Python version.
 - `uv python uninstall`: Uninstall a Python version.
 
-See the [guide on installing Python](../guides/install-python.md) to get started.
-
 ## Scripts
 
 Executing standalone Python scripts, e.g., `example.py`.
@@ -24,8 +22,6 @@ Executing standalone Python scripts, e.g., `example.py`.
 - `uv run`: Run a script.
 - `uv add --script`: Add a dependency to a script.
 - `uv remove --script`: Remove a dependency from a script.
-
-See the [guide on running scripts](../guides/scripts.md) to get started.
 
 ## Projects
 
@@ -41,8 +37,6 @@ Creating and working on Python projects, i.e., with a `pyproject.toml`.
 - `uv build`: Build the project into distribution archives.
 - `uv publish`: Publish the project to a package index.
 
-See the [guide on projects](../guides/projects.md) to get started.
-
 ## Tools
 
 Running and installing tools published to Python package indexes, e.g., `ruff` or `black`.
@@ -53,8 +47,6 @@ Running and installing tools published to Python package indexes, e.g., `ruff` o
 - `uv tool list`: List installed tools.
 - `uv tool update-shell`: Update the shell to include tool executables.
 
-See the [guide on tools](../guides/tools.md) to get started.
-
 ## The pip interface
 
 Manually managing environments and packages — intended to be used in legacy workflows or cases where
@@ -63,12 +55,6 @@ the high-level commands do not provide enough control.
 Creating virtual environments (replacing `venv` and `virtualenv`):
 
 - `uv venv`: Create a new virtual environment.
-
-See the documentation on [using environments](../pip/environments.md) for details.
-
-Managing packages in an environment (replacing [`pip`](https://github.com/pypa/pip) and
-[`pipdeptree`](https://github.com/tox-dev/pipdeptree)):
-
 - `uv pip install`: Install packages into the current environment.
 - `uv pip show`: Show details about an installed package.
 - `uv pip freeze`: List installed packages and their versions.
@@ -76,15 +62,9 @@ Managing packages in an environment (replacing [`pip`](https://github.com/pypa/p
 - `uv pip list`: List installed packages.
 - `uv pip uninstall`: Uninstall packages.
 - `uv pip tree`: View the dependency tree for the environment.
-
-See the documentation on [managing packages](../pip/packages.md) for details.
-
-Locking packages in an environment (replacing [`pip-tools`](https://github.com/jazzband/pip-tools)):
-
 - `uv pip compile`: Compile requirements into a lockfile.
 - `uv pip sync`: Sync an environment with a lockfile.
 
-See the documentation on [locking environments](../pip/compile.md) for details.
 
 !!! important
 
@@ -102,8 +82,17 @@ self-update:
 - `uv python dir`: Show the uv installed Python versions path.
 - `uv self update`: Update uv to the latest version.
 
-## Next steps
+```shell
+# 1. See what's outdated
+uv tree --outdated --depth=1
 
-Read the [guides](../guides/index.md) for an introduction to each feature, check out the
-[concept](../concepts/index.md) pages for in-depth details about uv's features, or learn how to
-[get help](./help.md) if you run into any problems.
+# 2. Upgrade everything (or just specific packages)
+uv lock --upgrade
+#   or: uv lock --upgrade-package fastapi --upgrade-package uvicorn
+
+# 3. Apply to your environment
+uv sync
+
+# 4. (optional) Test everything still works
+uv run pytest    # or your test command
+```
