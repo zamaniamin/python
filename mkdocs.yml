@@ -73,6 +73,7 @@ nav:
       - Object-Oriented Programming (OOP): python/classes/object-oriented-programming.md
       - Dependency Management:
           - Poetry: python/dependency/poetry.md
+          - UV: python/dependency/uv.md
   - Django:
       - Introduction to Django: django/index.md
       - Best Practices and Principles:
